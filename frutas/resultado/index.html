@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexBrasil - Quiz Resultado</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<div class="wrapper">
+    <header class="navbar">
+        <h1 class="logo logo__brasil mx-auto">BRASIL</h1>
+    </header>
+    <main class="container bg-custom-color">
+        <section class="text-center">
+            <h2 class="container__title text-custom-green">Parabéns!<br>Você acertou<br><strong
+                    class="text__large-size  text-custom-blue"><span id="finalScore"></span>
+                    perguntas</strong>
+            </h2>
+            <img class="my-4" src="../images/vale-brinde.png" alt="Vale-Brinde">
+            <div class="container__block my-4">
+                <p class="container__paragraph"><strong>Tire um print dessa tela para resgatar seu brinde</strong></p>
+            </div>
+        </section>
+    </main>
+    <div class="container text-center">
+        <p>Compareça em um de nossos estandes para resgatar seu prêmio. Confira abaixo os locais:</p>
+    </div>
+</div>
+<script>
+    const username = document.getElementById('username');
+    const saveScoreBtn = document.getElementById('saveScoreBtn');
+    const finalScore = document.getElementById('finalScore');
+
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+    const MAX_HIGH_SCORE = 5;
+
+    finalScore.innerText = mostRecentScore;
+
+    username.addEventListener('keyup', () => {
+        //   console.log(username.value);
+        saveScoreBtn.disabled = !username.value;
+    });
+
+    saveHighScore = (e) => {
+        e.preventDefault();
+
+        const score = {
+            score: mostRecentScore
+        };
+
+        highScores.push(score);
+        highScores.sort((a, b) => b.score - a.score);
+        highScores.splice(1);
+
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+
+        console.log(highScores);
+    };
+
+</script>
+</body>
+
+</html>

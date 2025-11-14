@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexBrasil - Quiz</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<div class="wrapper" id="game">
+    <header class="navbar">
+        <h1 class="logo logo__brasil mx-auto">BRASIL</h1>
+    </header>
+    <div class="quiz" id="question">
+        <!-- question será uma imagem #question -->
+        <div class="sr-only">
+            <!--<h2 id="question"></h2>-->
+            <p id="progressText" class="hud-prefix">Pergunta</p>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+            <div id="hud-item">
+                <p class="hud-prefix">Placar</p>
+                <h1 id="score" id="hud-main-text">0</h1>
+            </div>
+            <div id="loader"></div>
+        </div>
+        <ul class="quiz-answers">
+            <li class="quiz-answers__item">
+                <span class="button button__secondary choice-text" data-number="1">Maçã</span>
+            </li>
+            <li class="quiz-answers__item">
+                <span class="button button__secondary choice-text" data-number="2">Morango</span>
+            </li>
+            <li class="quiz-answers__item">
+                <span class="button button__secondary choice-text" data-number="3">Laranja</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../main.js"></script>
+</body>
+
+</html>

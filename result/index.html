@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexBrasil - Quiz Resultado</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<div class="wrapper">
+    <header class="navbar">
+        <h1 class="logo logo__brasil_apexbrasil_gulpfood2021 mx-auto">BRASIL - ApexBrasil - Gulpfood 2021</h1>
+    </header>
+    <main class="container bg-custom-color">
+        <section class="text-center">
+            <h2 id="header" class="container__title text-custom-green">Congratulations!<br>You got<br><strong
+                    class="text__large-size  text-custom-blue"><span id="finalScore"></span>
+                    questions right</strong>
+            </h2>
+            <img id="img" class="my-4" src="images/vale-brinde.png" alt="Vale-Brinde">
+            <div class="container__block my-4">
+                <p class="container__paragraph"><strong>Show this screen to the Brazilian staff and get your free kit.</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+    <div class="container text-center">
+        <p>You can collect your prize on one of the brazilian pavilions listed below:</p>
+        <p><small>Beverages: Z5-C22 (ZA'ABEEL HALLS 4 -6)<br>World Food: S-J28 (SHEIKH SAEED HALLS)</small></p>
+    </div>
+</div>
+<script>
+    const username = document.getElementById('username');
+    const saveScoreBtn = document.getElementById('saveScoreBtn');
+    const finalScore = document.getElementById('finalScore');
+    const header = document.getElementById('header');
+    const img = document.getElementById('img');
+
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+    const MAX_HIGH_SCORE = 5;
+
+
+    if (mostRecentScore == 0) {
+        // img.style.display = 'none';
+        header.innerHTML = `You got<br><strong class="text__large-size  text-custom-blue">${mostRecentScore} question right</strong>`
+    } 
+    else if(mostRecentScore == 1) {
+    	header.innerHTML = `Congratulations!<br>You got<br><strong class="text__large-size  text-custom-blue">${mostRecentScore} question right</strong>`
+    } else {
+        finalScore.innerText = mostRecentScore;
+    }
+
+    username.addEventListener('keyup', () => {
+        //   console.log(username.value);
+        saveScoreBtn.disabled = !username.value;
+    });
+
+    saveHighScore = (e) => {
+        e.preventDefault();
+
+        const score = {
+            score: mostRecentScore
+        };
+
+        highScores.push(score);
+        highScores.sort((a, b) => b.score - a.score);
+        highScores.splice(1);
+
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+
+        console.log(highScores);
+    };
+
+</script>
+</body>
+
+</html>

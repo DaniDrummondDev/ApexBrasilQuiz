@@ -1,0 +1,37 @@
+[
+    {
+        "question": "../images/quiz/strawberry.jpg",
+        "choice1": "Maça",
+        "choice2": "Morango",
+        "choice3": "Laranja",
+        "answer": 2
+    },
+    {
+        "question": "../images/quiz/tomato.jpg",
+        "choice1": "Tomate",
+        "choice2": "Abacaxi",
+        "choice3": "Laranja",
+        "answer": 1
+    },
+    {
+        "question": "../images/quiz/kiwi.jpg",
+        "choice1": "Laranja",
+        "choice2": "Maracujá",
+        "choice3": "Kiwi",
+        "answer": 3
+    },
+    {
+        "question": "../images/quiz/watermelon.jpg",
+        "choice1": "Tomate",
+        "choice2": "Abacaxi",
+        "choice3": "Melancia",
+        "answer": 3
+    },
+    {
+        "question": "../images/quiz/orange.jpg",
+        "choice1": "Laranja",
+        "choice2": "Melancia",
+        "choice3": "Tangerina",
+        "answer": 1
+    }
+]
