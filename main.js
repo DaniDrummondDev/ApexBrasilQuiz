@@ -47,7 +47,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem('mostRecentScore', score);
     // Go to the end game
-    return window.location.assign('/result');
+    return window.location.assign('https://danidrummonddev.github.io/ApexBrasilQuiz/result/');
   }
   questionCounter++;
   progressText.innerText = `Pergunta ${questionCounter}/${MAX_QUESTIONS}`;
@@ -103,3 +103,4 @@ incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
+
