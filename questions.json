@@ -1,7 +1,7 @@
 [
     {
         "question": "What is the most common type of banana used to prepare a delicious Brazilian-style Farofa?",
-        "imgUrl": "../images/quiz/banana.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/banana.jpg",
         "choice1": "Prata",
         "choice2": "Da Terra",
         "choice3": "Nanica",
@@ -9,7 +9,7 @@
     },
     {
         "question": "Which grain goes in an authentic Brazilian Galinhada?",
-        "imgUrl": "../images/quiz/galinhada.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/galinhada.jpg",
         "choice1": "Corn",
         "choice2": "Wheat",
         "choice3": "Quinoa",
@@ -17,7 +17,7 @@
     },
     {
         "question": "What can a Brazilian Moqueca be made with?",
-        "imgUrl": "../images/quiz/moqueca.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/moqueca.jpg",
         "choice1": "Rice and beans",
         "choice2": "Octopus and Shrimp",
         "choice3": "Chocolate and caramel",
@@ -25,7 +25,7 @@
     },
     {
         "question": "What kind of flour is used in the famous Brazilian Coxinha?",
-        "imgUrl": "../images/quiz/coxinha.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/coxinha.jpg",
         "choice1": "Wheat Flour",
         "choice2": "Corn Flour",
         "choice3": "Rice Flour",
@@ -33,7 +33,7 @@
     },
     {
         "question": "Where is the best place to find a real Brazilian Pastel?",
-        "imgUrl": "../images/quiz/coxinha.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/coxinha.jpg",
         "choice1": "In popular markets",
         "choice2": "In famous restaurants",
         "choice3": "In beach cafes",
@@ -41,7 +41,7 @@
     },
     {
         "question": "Brigadeiro is one of the most popular desserts in Brazil. What is it made of?",
-        "imgUrl": "../images/quiz/brigadeiro.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/brigadeiro.jpg",
         "choice1": "Açaí",
         "choice2": "Banana",
         "choice3": "Cocoa",
@@ -49,7 +49,7 @@
     },
     {
         "question": "Where does the cheese used in Cheese Rolls traditionally comes from in Brazil?",
-        "imgUrl": "../images/quiz/cheese-bread.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/cheese-bread.jpg",
         "choice1": "Amazon",
         "choice2": "São Paulo",
         "choice3": "Minas Gerais",
@@ -57,7 +57,7 @@
     },
     {
         "question": "Cassava is a typical Brazilian food. But in some parts of the country it has another name. What is it?",
-        "imgUrl": "../images/quiz/cassava.jpg",
+        "imgUrl": "https://danidrummonddev.github.io/ApexBrasilQuiz/images/quiz/cassava.jpg",
         "choice1": "Melado",
         "choice2": "Macaxeira",
         "choice3": "Mogno",
